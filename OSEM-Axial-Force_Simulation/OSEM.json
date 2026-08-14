@@ -1,0 +1,24 @@
+{
+"coil": {
+"length_mm": 8.001,
+"r_inner_mm": 8.89,
+"r_outer_mm": 16.51,
+"turns_total": 800,
+"current_A": 1,
+"sigma_override_A_per_m2": null
+},
+"magnet": {
+"radius_mm": 5.0,
+"height_mm": 10.0,
+"Mz_A_per_m": 8.78e5
+},
+"integration": {
+"n_theta": 8,
+"n_r1": 8,
+"n_z1": 8,
+"n_r2": 8,
+"n_z2": 8,
+"z_scan_mm": { "min": -14.0, "max": 14.0, "num": 2800 }
+},
+"plot": { "save_path": "Fz_vs_z.html" }
+}
