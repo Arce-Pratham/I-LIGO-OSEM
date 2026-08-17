@@ -18,7 +18,7 @@
 "n_z1": 8,
 "n_r2": 8,
 "n_z2": 8,
-"z_scan_mm": { "min": -14.0, "max": 14.0, "num": 2800 }
+"z_scan_mm": { "min": -14.0, "max": 14.0, "num": 280 }
 },
 "plot": { "save_path": "Fz_vs_z.html" }
 }
