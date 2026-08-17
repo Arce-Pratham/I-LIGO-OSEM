@@ -1,0 +1,37 @@
+name: Run OSEM Forces Simulation Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-simulation:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository content so the runner can access it
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the correct Python environment
+      - name: Set up Python runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Step 3: Automatically find and install requirements if they exist
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f OSEM-Axial-Force_simulation/requirements.txt ]; then
+            pip install -r OSEM-Axial-Force_simulation/requirements.txt
+          elif [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      # Step 4: Switch context to the specific folder and run the python file
+      - name: Run OSEM Forces Simulation Script
+        working-directory: ./OSEM-Axial-Force_simulation
+        run: python osem_forces.py
