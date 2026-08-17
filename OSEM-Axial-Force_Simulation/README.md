@@ -1,5 +1,5 @@
 <!-- GitHub Actions Workflow Status Badge -->
-[![Run OSEM Forces Simulation Tests](https://github.com/Arce-Pratham/I-LIGO-OSEM/.github/workflows/tests.yml/badge.svg)](https://github.com/Arce-Pratham/I-LIGO-OSEM/.github/workflows/tests.yml)
+[![Run OSEM Forces Simulation Tests](https://github.com/Arce-Pratham/I-LIGO-OSEM/blob/main/.github/workflows/tests.yml/badge.svg)](https://github.com/Arce-Pratham/I-LIGO-OSEM/blob/main/.github/workflows/tests.yml)
 
 ## Overview
 This repository contains the simulation code for analyzing axial forces. 
