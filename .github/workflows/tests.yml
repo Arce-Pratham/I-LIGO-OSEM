@@ -25,13 +25,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f OSEM-Axial-Force_simulation/requirements.txt ]; then
-            pip install -r OSEM-Axial-Force_simulation/requirements.txt
+          if [ -f OSEM-Axial-Force_Simulation/requirements.txt ]; then
+            pip install -r OSEM-Axial-Force_Simulation/requirements.txt
           elif [ -f requirements.txt ]; then
             pip install -r requirements.txt
           fi
 
       # Step 4: Switch context to the specific folder and run the python file
       - name: Run OSEM Forces Simulation Script
-        working-directory: ./OSEM-Axial-Force_simulation
+        working-directory: ./OSEM-Axial-Force_Simulation
         run: python osem_forces.py
