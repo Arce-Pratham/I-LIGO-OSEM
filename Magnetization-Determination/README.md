@@ -1,3 +1,22 @@
+# Magnetization Tests
+
+<!-- GitHub Actions Workflow Status Badge -->
+[![Run OSEM Forces Simulation Tests](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME/actions/workflows/tests.yml)
+
+## Overview
+This repository contains the simulation code for analyzing axial forces. 
+
+### Automated Testing
+The status badge above reflects the live operational state of the automated test suite running against `OSEM-Axial-Force_simulation/osem_forces.py`. 
+- **Passing (Green):** The script executes successfully without syntax errors or runtime exceptions.
+- **Failing (Red):** An error was introduced or a dependency is missing.
+- **Running (Yellow):** GitHub Actions is currently executing the simulation pipeline.
+
+
+
+
+
+
 # Magnet Magnetization Fit (Amperian Loop Model)
 
 Estimates the axial magnetization $M$ of two identical, coaxial cylindrical
